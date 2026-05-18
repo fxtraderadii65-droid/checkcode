@@ -1,85 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traders Paradise </title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #0d0d0d;
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-        }
-        .gold-text {
-            color: #cda250;
-        }
-        .gold-bg {
-            background-color: #cda250;
-        }
-        .gold-border {
-            border-color: #cda250;
-        }
-        .card-bg {
-            background-color: #141414;
-            border: 1px solid #222;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trading Landing Page</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#050505;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:420px;
+      background:#0d0d0d;
+      border-radius:35px;
+      padding:30px 25px;
+      text-align:center;
+      color:white;
+      box-shadow:0 0 40px rgba(255,140,0,0.15);
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .profile-img{
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      border:6px solid #ff981f;
+      object-fit:cover;
+      margin-bottom:20px;
+    }
+
+    h1{
+      color:#ff981f;
+      font-size:42px;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      color:#bdbdbd;
+      font-size:22px;
+      margin-bottom:30px;
+    }
+
+    .info-box{
+      background:#161616;
+      border-radius:25px;
+      padding:25px;
+      text-align:left;
+      margin-bottom:30px;
+    }
+
+    .info-box p{
+      font-size:22px;
+      margin:18px 0;
+      color:#e5e5e5;
+    }
+
+    .join-btn{
+      display:block;
+      width:100%;
+      text-decoration:none;
+      background:linear-gradient(90deg,#ff8a00,#ffb347);
+      color:#000;
+      font-size:28px;
+      font-weight:700;
+      padding:22px;
+      border-radius:60px;
+      transition:0.3s;
+      box-shadow:0 0 30px rgba(255,140,0,0.45);
+    }
+
+    .join-btn:hover{
+      transform:scale(1.03);
+    }
+
+    .joined{
+      margin-top:25px;
+      color:#cfcfcf;
+      font-size:22px;
+    }
+
+    .footer{
+      margin-top:25px;
+      color:#777;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    @media(max-width:480px){
+
+      h1{
+        font-size:34px;
+      }
+
+      .subtitle{
+        font-size:18px;
+      }
+
+      .info-box p{
+        font-size:18px;
+      }
+
+      .join-btn{
+        font-size:22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <header class="border-b border-gray-800 sticky top-0 bg-[#0d0d0d] z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <span class="text-xl font-bold gold-text font-serif">Traders Paradise</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 text-gray-400 text-sm">
-                <a href="#" class="hover:text-white transition">Home</a>
-                <a href="#" class="hover:text-white transition">Services</a>
-                <a href="#" class="hover:text-white transition">Platforms</a>
-                <a href="#" class="hover:text-white transition">Social</a>
-            </nav>
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-sm font-medium hover:text-gray-300">Login</a>
-                <a href="#" class="gold-bg text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition">Sign Up</a>
-            </div>
-        </div>
-    </header>
+  <div class="card">
 
-    <section class="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between min-h-[80vh]">
-        <div class="lg:w-1/2 space-y-6">
-            <h1 class="text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
-                Welcome To <br><span class="gold-text">Traders Paradise</span>
-            </h1>
-            <p class="text-gray-400 text-lg italic max-w-md">
-                "Click on JOIN US and join Telegram"
-            </p>
-            <div class="flex space-x-4 pt-4">
-                <a href="#" class="gold-bg text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">Join Telegram</a>
-            </div>
-        </div>
-        <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center relative">
-            <div class="absolute w-72 h-72 bg-yellow-600/10 rounded-full blur-3xl space-y-4"></div>
-          <div class="w-80 h-96 bg-gradient-to-b from-gray-800 to-transparent rounded-2xl border border-gray-800 flex items-center justify-center overflow-hidden">
-    <img src="https://ibb.co/792KqMT" alt="Profile Picture" class="w-full h-full object-cover">
-</div>
-            </div>
-        </div>
-    </section>
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-2">VIP SIGNALS</h3>
-                    <p class="text-xs text-gray-400 mb-4">Exclusive trading signals with High accuracy</p>
-                    <ul class="text-xs text-gray-400 space-y-2 mb-6 list-disc list-inside">
-                        <li>Real-time market alerts</li>
-                        <li>Entry & exit points</li>
-                        <li>Risk management</li>
-                        <li>24/7 support</li>
-                    </ul>
-                </div>
-                <a href="#" class="w-full text-center py-2 bg-gray-900 hover:bg-gray-800 rounded text-sm transition">Get Access</a>
-            </div>
-    </footer>
+    <!-- Profile Image -->
+    <img src="https://i.imgur.com/0y0y0y0.jpg" class="profile-img">
+
+    <!-- Name -->
+    <h1>YOUR NAME</h1>
+
+    <!-- Subtitle -->
+    <div class="subtitle">
+      Learn Smart • Grow Fast 🚀
+    </div>
+
+    <!-- Features -->
+    <div class="info-box">
+      <p>✔ Stock Market Learning & Mindset</p>
+      <p>✔ Beginner Friendly Guidance</p>
+      <p>✔ Daily Market Insights</p>
+      <p>✔ No Tips • Only Education</p>
+    </div>
+
+    <!-- Telegram Button -->
+    <a href="https://t.me/+XROODG48_ZlhNjU1" class="join-btn">
+      🚀 Join Free Telegram Now
+    </a>
+
+    <!-- Joined Text -->
+    <div class="joined">
+      🔥 10,000+ Traders Already Joined
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      This is for educational purposes only.  
+      We do not provide financial advice or guarantees.
+    </div>
+
+  </div>
 
 </body>
 </html>
