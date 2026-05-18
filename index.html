@@ -101,26 +101,58 @@
       line-height:1.5;
     }
 
+    /* --- MOBILE RESPONSIVE CODE FIXED HERE --- */
     @media(max-width:480px){
+      body {
+        padding: 10px; /* Mobile par side ki extra space kam karne ke liye */
+      }
+
+      .card {
+        padding: 20px 15px; /* Card ke andar ki space choti ki */
+        border-radius: 20px;
+      }
+
+      .profile-img {
+        width: 110px; /* Image size thoda chota kiya */
+        height: 110px;
+        border-width: 4px;
+      }
 
       h1{
-        font-size:34px;
+        font-size:26px; /* 34px se chota karke 26px kiya taaki naam screen mein fit aaye */
       }
 
       .subtitle{
-        font-size:18px;
+        font-size:14px; /* Size chota kiya */
+        margin-bottom: 15px;
+      }
+
+      .info-box {
+        padding: 15px;
+        margin-bottom: 20px;
       }
 
       .info-box p{
-        font-size:18px;
+        font-size:14px; /* Box ke andar ka text chota kiya */
+        margin: 10px 0;
       }
 
       .join-btn{
-        font-size:22px;
+        font-size:16px; /* Button ka text 22px se kam karke 16px kiya */
+        padding: 15px; /* Button ki height kam ki */
+      }
+
+      .joined {
+        font-size: 16px; /* Text size chota kiya */
+        margin-top: 15px;
+      }
+
+      .footer {
+        font-size: 12px; /* Footer text bilkul sahi size ka kiya */
+        margin-top: 15px;
       }
     }
   </style>
-<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -136,25 +168,20 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=3315415021998598&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 </head>
 
 <body>
 
   <div class="card">
 
-    <!-- Profile Image -->
     <img src="https://www.image2url.com/r2/default/images/1779131604353-f03e6449-282f-45d2-ba07-40b2e563d164.jpeg" alt="image" class="profile-img">
 
-    <!-- Name -->
     <h1>PRUTHVIRAJ NIKAM</h1>
 
-    <!-- Subtitle -->
     <div class="subtitle">
       Learn Smart • Grow Fast 🚀
     </div>
 
-    <!-- Features -->
     <div class="info-box">
       <p>✔ Stock Market Learning & Mindset</p>
       <p>✔ Beginner Friendly Guidance</p>
@@ -162,17 +189,14 @@ src="https://www.facebook.com/tr?id=3315415021998598&ev=PageView&noscript=1"
       <p>✔ No Tips • Only Education</p>
     </div>
 
-    <!-- Telegram Button -->
     <a href="https://t.me/+arHYlKO07x40Zjg1" class="join-btn">
       🚀 Join Free Telegram Now
     </a>
 
-    <!-- Joined Text -->
     <div class="joined">
       🔥 10,000+ Traders Already Joined
     </div>
 
-    <!-- Footer -->
     <div class="footer">
       This is for educational purposes only.  
       We do not provide financial advice or guarantees.
